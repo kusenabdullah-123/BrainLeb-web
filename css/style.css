@@ -1,0 +1,74 @@
+nav {
+  background-color: #3d8e7f;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+}
+nav.navbar-light .navbar-brand.logo {
+  color: #ffffff;
+}
+nav .navbar-collapse .login button {
+  background-color: #f9ba50;
+  width: 100px;
+  color: #ffffff;
+}
+nav .navbar-collapse .login button:hover {
+  background-color: #eec173;
+}
+.jumbotron {
+  background-color: white;
+  width: 100%;
+  height: 550px;
+  background-image: url(../image/GAMBAR.png);
+  background-size: cover;
+}
+.jumbotron .container {
+  position: relative;
+}
+.jumbotron .container .judul {
+  width: 700px;
+  color: white;
+}
+.jumbotron .container .judul h1 {
+  text-transform: uppercase;
+}
+.jumbotron img {
+  width: 508px;
+  height: 402px;
+  position: absolute;
+  right: 0px;
+  top: 200px;
+}
+section.top {
+  height: 300px;
+}
+section.top .judul h1 {
+  color: #4f4f4f;
+  text-transform: uppercase;
+}
+section.top .judul h1::after {
+  content: "";
+  border-bottom: 4px solid #4f4f4f;
+  display: block;
+  border-radius: 5px;
+  width: 83%;
+  margin: auto;
+}
+section.top .menu .box .item {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  height: 80px;
+  font-size: 27px;
+  text-transform: capitalize;
+}
+section.top .menu .box .item:hover {
+  cursor: pointer;
+  transform: translateY(-15px);
+}
+
+section.tengah {
+  height: 900px;
+  border: 1px solid red;
+}
+section.tengah .top {
+  background-image: url(../image/tengah2.png);
+  background-size: cover;
+  height: 800px;
+}
