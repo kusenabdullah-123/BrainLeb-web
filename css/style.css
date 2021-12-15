@@ -1,3 +1,6 @@
+body {
+  background-color: #f4f4f4;
+}
 nav {
   background-color: #3d8e7f;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
@@ -65,10 +68,152 @@ section.top .menu .box .item:hover {
 
 section.tengah {
   height: 900px;
-  border: 1px solid red;
 }
 section.tengah .top {
   background-image: url(../image/tengah2.png);
   background-size: cover;
   height: 800px;
+}
+section.tengah .top .one {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+section.tengah .top .one img {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: -100px;
+}
+section.tengah .top .one-kanan .box {
+  width: 70%;
+}
+section.tengah .top .one-kanan .box h2 {
+  font-weight: bold;
+  color: black;
+  font-size: 46px;
+}
+section.tengah .top .one-kanan .box h2 span {
+  margin-left: -10px;
+  color: #fabb51;
+}
+section.tengah .top .one-kanan .box p {
+  font-size: 24px;
+  color: white;
+}
+section.tengah .top .one-kanan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+section.tengah .top .two {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+section.tengah .top .two-kiri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 10px;
+  top: 35%;
+}
+section.tengah .top .two img {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  right: 40px;
+  bottom: -10px;
+}
+section.tengah .top .two-kiri .box {
+  width: 70%;
+}
+section.tengah .top .two-kiri .box h2 {
+  color: white;
+}
+section.tengah .top .two-kiri .box h2 span {
+  color: #fabb51;
+  font-weight: bold;
+}
+section.tengah .top .two-kiri .box p {
+  color: white;
+}
+
+section.tengah .bottom {
+  height: 400px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+section.tengah .bottom .three {
+  width: 90%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+section.tengah .bottom .three .image {
+  position: relative;
+  width: 40%;
+  height: 400px;
+}
+section.tengah .bottom .three .image img.img-1 {
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+section.tengah .bottom .three .image img.img-2 {
+  position: absolute;
+  z-index: 2;
+  top: -20px;
+  height: 200px;
+}
+section.tengah .bottom .three .image img.img-3 {
+  position: absolute;
+  z-index: 3;
+  bottom: 0px;
+  height: 200px;
+  right: -10px;
+}
+section.tengah .bottom .three .three-kanan {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 60%;
+}
+section.tengah .bottom .three .three-kanan .box {
+  width: 80%;
+}
+section.tengah .bottom .three .three-kanan .box h2 {
+  font-size: 46px;
+  font-weight: bold;
+}
+section.tengah .bottom .three .three-kanan .box h2 span {
+  color: #fabb51;
+  font-weight: bold;
+}
+section.tengah .bottom .three .three-kanan .box p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 500px;
+  height: 300px;
+  background-image: url(../image/footer.png);
+  background-size: cover;
+  background-position: 5px;
+  background-repeat: no-repeat;
 }
