@@ -15,3 +15,8 @@ $(document).click(function (event) {
 $("section.mapel main .cards.mapel").click((e) => {
   window.location.href = `${window.location.origin}/materi.html`;
 });
+
+$(".jumbotron .box-login form .button button").click((e) => {
+  e.preventDefault();
+  window.location.href = `${window.location.origin}/mapel.html`;
+});

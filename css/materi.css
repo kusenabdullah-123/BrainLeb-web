@@ -87,7 +87,10 @@ section aside .box {
 section aside .box .icon {
   flex-basis: 80%;
 }
-
+section aside .box .icon a {
+  text-decoration: none;
+  color: black;
+}
 section aside .box .form-check {
   flex-basis: 20%;
 }
@@ -108,4 +111,8 @@ section main .box {
 }
 section main .box .icon {
   flex-basis: 80%;
+}
+section main .box .icon a {
+  text-decoration: none;
+  color: black;
 }
