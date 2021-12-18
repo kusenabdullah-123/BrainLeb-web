@@ -3,10 +3,24 @@ body {
 }
 nav {
   background-color: #3d8e7f;
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
 }
-nav.navbar-light .navbar-brand.logo {
+
+nav.navbar-light .logo img {
+  height: 27px;
+  width: 30px;
+}
+nav.navbar-light .logo a.navbar-brand {
   color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav.navbar-light .logo a:hover {
+  color: white;
+}
+nav.navbar-light .logo a span {
+  color: #f9ba50;
 }
 nav .navbar-collapse .login button {
   background-color: #f9ba50;
@@ -23,6 +37,99 @@ nav .navbar-collapse .login button:hover {
   background-image: url(../image/GAMBAR.png);
   background-size: cover;
 }
+
+.jumbotron .box-login {
+  position: absolute;
+  height: 370px;
+  width: 428px;
+  background-color: white;
+  right: 50px;
+  top: 60px;
+  padding: 20px;
+  transition: ease-in 0.7s;
+
+  -webkit-transition: ease-in 0.7s;
+  -moz-transition: ease-in 0.7s;
+  -ms-transition: ease-in 0.7s;
+  -o-transition: ease-in 0.7s;
+}
+.jumbotron .box-login.show {
+  opacity: 1;
+  visibility: visible;
+  z-index: 9;
+}
+.jumbotron .box-login.hide {
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+}
+.jumbotron .box-login form .judul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.jumbotron .box-login form .judul img {
+  height: 40px;
+  width: 40px;
+  color: red;
+  margin-right: 20px;
+  position: relative;
+}
+.jumbotron .box-login form .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.jumbotron .box-login form .input label {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+.jumbotron .box-login form .input input {
+  height: 40px;
+  border: #dbdbdb solid;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.jumbotron .box-login form .input input:focus {
+  outline: none;
+}
+.jumbotron .box-login form .forget {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.jumbotron .box-login form .button button {
+  height: 41px;
+  width: 101px;
+  background-color: #fabb51;
+  color: white;
+  border: #fabb51 0px;
+  /* outline: none; */
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.jumbotron .box-login form .button button:hover {
+  cursor: pointer;
+}
+.jumbotron .box-login form .button button:focus {
+  outline: none;
+}
 .jumbotron .container {
   position: relative;
 }
@@ -33,12 +140,12 @@ nav .navbar-collapse .login button:hover {
 .jumbotron .container .judul h1 {
   text-transform: uppercase;
 }
-.jumbotron img {
+.jumbotron img.gambar {
   width: 508px;
   height: 402px;
   position: absolute;
   right: 0px;
-  top: 200px;
+  top: 180px;
 }
 section.top {
   height: 300px;
@@ -56,6 +163,7 @@ section.top .judul h1::after {
   margin: auto;
 }
 section.top .menu .box .item {
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   height: 80px;
   font-size: 27px;
@@ -63,6 +171,8 @@ section.top .menu .box .item {
 }
 section.top .menu .box .item:hover {
   cursor: pointer;
+  -webkit-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
   transform: translateY(-15px);
 }
 
@@ -76,7 +186,12 @@ section.tengah .top {
 }
 section.tengah .top .one {
   height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
 }
@@ -103,9 +218,18 @@ section.tengah .top .one-kanan .box p {
   color: white;
 }
 section.tengah .top .one-kanan {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
   right: 10px;
@@ -114,14 +238,28 @@ section.tengah .top .one-kanan {
 
 section.tengah .top .two {
   height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
 }
 section.tengah .top .two-kiri {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
   left: 10px;
@@ -150,8 +288,15 @@ section.tengah .top .two-kiri .box p {
 
 section.tengah .bottom {
   height: 400px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-top: 100px;
 }
@@ -159,7 +304,12 @@ section.tengah .bottom .three {
   width: 90%;
   height: 400px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 section.tengah .bottom .three .image {
@@ -188,8 +338,14 @@ section.tengah .bottom .three .image img.img-3 {
 }
 section.tengah .bottom .three .three-kanan {
   position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 60%;
 }
