@@ -67,45 +67,69 @@ nav.bread ol li a {
 nav.bread ol li a:hover {
   color: #3e8e7e;
 }
-section {
+section.mapel {
   display: flex;
   flex-direction: row;
   padding: 30px;
   justify-content: space-between;
 }
-section aside {
-  padding: 30px;
-  flex-basis: 25%;
-  background-color: #ffffff;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-}
-section aside .box {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 20px;
-}
-section aside .box .icon {
-  flex-basis: 80%;
-}
-
-section aside .box .form-check {
-  flex-basis: 20%;
-}
-section main {
-  flex-basis: 65%;
-  background-color: #ffffff;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+section.mapel aside {
   padding: 20px;
+  flex-basis: 35%;
+  /* background-color: #ffffff; */
+  /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); */
 }
-section main h2 {
+section.mapel aside h2 {
+  font-size: 24px;
   font-weight: bold;
 }
-section main .box {
+section.mapel aside .cards {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
-section main .box .icon {
-  flex-basis: 80%;
+section.mapel aside .cards img {
+  height: 91px;
+  width: 115px;
+}
+section.mapel aside .cards .judul {
+  margin: 0px 20px;
+}
+section.mapel main {
+  padding: 20px;
+  flex-basis: 60%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+section.mapel main h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+section.mapel main .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.mapel main .container .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  flex-basis: 45%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+section.mapel main .container .cards:hover {
+  cursor: pointer;
+}
+section.mapel main .container .cards img {
+  height: 150px;
+  width: 220px;
+}
+section.mapel main .container .cards .progress {
+  background-color: #ebdfba;
+}
+section.mapel main .container .cards .progress .progress-bar {
+  background-color: #fabb51;
 }

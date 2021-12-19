@@ -11,3 +11,7 @@ $(document).click(function (event) {
     $(".jumbotron .box-login").addClass("hide");
   }
 });
+
+$("section.mapel main .cards.mapel").click((e) => {
+  window.location.href = `${window.location.origin}/materi.html`;
+});
