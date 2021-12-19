@@ -1,0 +1,48 @@
+body {
+  background-color: #f4f4f4;
+}
+nav.navbar {
+  background-color: #3d8e7f;
+  -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+nav.navbar-light .logo img {
+  height: 27px;
+  width: 30px;
+}
+nav.navbar-light .logo a.navbar-brand {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav.navbar-light .logo a:hover {
+  color: white;
+}
+nav.navbar-light .logo a span {
+  color: #f9ba50;
+}
+
+nav #navbarNav .login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav #navbarNav .login .fa-bell {
+  color: white;
+}
+nav #navbarNav .login img {
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+nav #navbarNav .login img:hover,
+nav #navbarNav .login .fa-bell:hover {
+  cursor: pointer;
+}
